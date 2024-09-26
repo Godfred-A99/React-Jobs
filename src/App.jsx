@@ -1,40 +1,19 @@
-
-import Hero from "./componentes/Hero"
-import HomeCards from "./componentes/homeCards"
-import JobListings from "./componentes/JobListings"
-import Navbar from "./componentes/Navbar"
-
-
-
+import Hero from "./components/Hero";
+import HomeCards from "./components/homeCards";
+import JobListings from "./components/JobListings";
+import Navbar from "./components/Navbar";
+import ViewAllJobs from "./components/ViewAllJobs";
 
 const App = () => {
- 
-
   return (
     <>
-      <Navbar  />
+      <Navbar />
       <Hero />
       <HomeCards />
-      <JobListings  />
-
-    
-    
-
-    
-    
-
-    
-    
-
-    <section className="m-auto max-w-lg my-10 px-6">
-      <a
-        href="jobs.html"
-        className="block bg-black text-white text-center py-4 px-6 rounded-xl hover:bg-gray-700"
-        >View All Jobs</a
-      >
-    </section>
+      <JobListings />
+      <ViewAllJobs />
     </>
-  )
-}
+  );
+};
 
-export default App 
+export default App;
