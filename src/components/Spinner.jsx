@@ -1,14 +1,14 @@
 /* eslint-disable react/prop-types */
-/* eslint-disable no-unused-vars */
-/* eslint-disable no-undef */
-import ClipLoader from "react-spinner / ClipLoader";
 
-const cssOverride = {
+import ClipLoader from "react-spinners/ClipLoader";
+
+const override = {
   display: "block",
   margin: "100px auto",
 };
 
 const Spinner = ({ loading }) => {
+
   return (
     <ClipLoader
       color="#4338ca"
