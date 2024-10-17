@@ -42,7 +42,7 @@ const EditJobPage = ({ updateJobSubmit }) => {
 
     toast.success("Job Update successfully!");
 
-    return navigate(`/jobs/${id}`);
+    return navigate(`/jobs`);
   };
   return (
     <section className="bg-indigo-50">
