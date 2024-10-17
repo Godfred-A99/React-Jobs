@@ -2,9 +2,10 @@
 /* eslint-disable no-unused-vars */
 /* eslint-disable react-refresh/only-export-components */
 
-import { useParams, useLoaderData ,useNavigate } from "react-router-dom";
+import { useParams, useLoaderData, useNavigate } from "react-router-dom";
 import { FaArrowLeft, FaMapMarker } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import { toast } from "react-toastify";
 const JobPage = ({ deleteJob }) => {
   const { id } = useParams();
   const job = useLoaderData();
@@ -19,9 +20,10 @@ const JobPage = ({ deleteJob }) => {
 
     deleteJob(id);
 
+    toast.success("Job deleted successfully!")
+
     navigate("/jobs", { replace: true });
-        
-  }
+  };
 
   return (
     <>
