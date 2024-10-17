@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import {
   Route,
   createBrowserRouter,
@@ -12,7 +13,14 @@ import JobPage, { jobLoader } from "./Page/JobPage";
 import AddJobPage from "./Page/addJobPage";
 
 const App = () => {
-  const addJob = (newJob) => {};
+  const addJob = async (newJob) => {
+    const res = await fetch("/api/jobs", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(newJob),
+    });
+    return;
+  };
 
   const router = createBrowserRouter(
     createRoutesFromElements(

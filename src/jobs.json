@@ -83,6 +83,20 @@
         "contactEmail": "contact@ipsumlorem.com",
         "contactPhone": "555-555-5555"
       }
+    },
+    {
+      "id": "b817",
+      "title": "godfred",
+      "type": "Part-Time",
+      "location": "nungua",
+      "description": "it a wharehouse listing ",
+      "salary": "Under $50K",
+      "company": {
+        "name": "herona",
+        "description": "we sale medicine",
+        "contactEmail": "text@gmail.com",
+        "contactPhone": "0550210643"
+      }
     }
   ]
 }
